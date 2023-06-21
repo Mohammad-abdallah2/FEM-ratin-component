@@ -1,0 +1,67 @@
+@import "../abstracts/media-query";
+@import "../abstracts/variables";
+
+@include media-md {
+  body {
+    padding-inline: unset;
+  }
+
+  .rate-component-main {
+    width: 340px;
+    padding: 35px 35px 35px 35px;
+
+    .before-rate {
+
+      .rate-icon {
+        padding: 17px 7px;
+        max-width: 40px;
+        margin-bottom: 35px;
+      }
+
+      .rate-component-title {
+        margin-bottom: 25px;
+      }
+
+      .rate-component-desc {
+        max-width: 325px;
+        margin-bottom: 25px;
+      }
+
+      .input-rate-main {
+        row-gap: 30px;
+
+        .input-rate {
+          justify-content: space-between;
+          column-gap: 25px;
+        }
+      }
+    }
+
+    .after-rate {
+      .thanks-icon-after {
+        margin-bottom: 31px;
+        margin-top: 10px;
+        padding-top: 5px;
+      }
+
+      .your-selected {
+        min-width: 192px;
+        padding: 7px 2px;
+        margin-bottom: 25px;
+      }
+
+      .after-rate-title {
+        font-weight: 700;
+        font-size: 27px;
+        margin: {
+          top: unset;
+          bottom: 15px;
+        };
+      }
+    }
+
+
+  }
+}
+
+

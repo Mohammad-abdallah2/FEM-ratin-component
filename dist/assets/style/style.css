@@ -1,0 +1,199 @@
+body {
+  font-family: "Overpass", sans-serif;
+  background: hsl(216, 12%, 8%);
+  font-size: 15px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 16px;
+}
+
+.submit-rate {
+  min-width: 100%;
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  padding: 14px 28px;
+  border-radius: 25px;
+  border: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+.submit-rate:hover {
+  transition: all 0.3s ease-in-out;
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.notSelectedBtn {
+  cursor: not-allowed;
+}
+.notSelectedBtn:hover {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rate-component-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(37, 45, 55, 0.2);
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px 24px 30px 24px;
+}
+.rate-component-main .before-rate {
+  display: flex;
+  flex-direction: column;
+}
+.rate-component-main .before-rate .rate-icon {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: rgba(149, 158, 172, 0.1);
+  padding: 14px 7px;
+  border-radius: 50%;
+  max-width: 30px;
+  margin-bottom: 22px;
+}
+.rate-component-main .before-rate .rate-component-title {
+  display: flex;
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+  max-width: 100%;
+  letter-spacing: 1px;
+  margin-top: unset;
+  margin-bottom: 30px;
+}
+.rate-component-main .before-rate .rate-component-desc {
+  display: flex;
+  color: hsl(216, 12%, 54%);
+  margin-top: unset;
+  margin-bottom: 30px;
+}
+.rate-component-main .before-rate .input-rate-main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.rate-component-main .before-rate .input-rate-main .input-rate ul {
+  display: flex;
+  justify-content: space-between;
+  padding: unset;
+  margin: unset;
+}
+.rate-component-main .before-rate .input-rate-main .input-rate ul li {
+  list-style: none;
+}
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate {
+  display: flex;
+  background: rgba(149, 158, 172, 0.1);
+  padding: 14px 20px;
+  border-radius: 50%;
+  border: none;
+  color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  text-align: center;
+}
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate:hover {
+  transition: all 0.3s ease-in-out;
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.rate-component-main .before-rate .input-rate-main .input-rate ul .rate:focus {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.rate-component-main .after-rate {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.rate-component-main .after-rate .thanks-icon-after {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding-top: 5px;
+}
+.rate-component-main .after-rate .your-selected {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 4px;
+  column-gap: 4px;
+  background: rgba(149, 158, 172, 0.1);
+  padding: 10px;
+  border-radius: 25px;
+  max-width: 166px;
+  color: rgba(251, 116, 19, 0.7);
+  margin-bottom: 30px;
+}
+.rate-component-main .after-rate .after-rate-title {
+  font-size: 25px;
+  color: hsl(0, 0%, 100%);
+  margin-top: unset;
+  margin-bottom: 23px;
+}
+.rate-component-main .after-rate .after-rate-decs {
+  text-align: center;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: unset;
+  margin-bottom: 10px;
+}
+.rate-component-main .disFlex {
+  display: flex;
+}
+.rate-component-main .disNone {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-inline: unset;
+  }
+  .rate-component-main {
+    width: 340px;
+    padding: 35px 35px 35px 35px;
+  }
+  .rate-component-main .before-rate .rate-icon {
+    padding: 17px 7px;
+    max-width: 40px;
+    margin-bottom: 35px;
+  }
+  .rate-component-main .before-rate .rate-component-title {
+    margin-bottom: 25px;
+  }
+  .rate-component-main .before-rate .rate-component-desc {
+    max-width: 325px;
+    margin-bottom: 25px;
+  }
+  .rate-component-main .before-rate .input-rate-main {
+    row-gap: 30px;
+  }
+  .rate-component-main .before-rate .input-rate-main .input-rate {
+    justify-content: space-between;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+  }
+  .rate-component-main .after-rate .thanks-icon-after {
+    margin-bottom: 31px;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  .rate-component-main .after-rate .your-selected {
+    min-width: 192px;
+    padding: 7px 2px;
+    margin-bottom: 25px;
+  }
+  .rate-component-main .after-rate .after-rate-title {
+    font-weight: 700;
+    font-size: 27px;
+    margin-top: unset;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

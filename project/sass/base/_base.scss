@@ -1,0 +1,14 @@
+@import "../abstracts/colors";
+@import "../abstracts/variables";
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background: $very-bark-blue;
+  font-size: $font-size-15;
+  margin: $m-0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 16px;
+}

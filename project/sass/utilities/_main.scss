@@ -1,0 +1,143 @@
+@import "../abstracts/colors";
+@import "../abstracts/variables";
+
+.rate-component-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba($dark-blue, 0.2);
+  width: 100%;
+  border-radius: $border-radius-20;
+  padding: 30px 24px 30px 24px;
+
+  .before-rate {
+    display: flex;
+    flex-direction: column;
+
+    .rate-icon {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      background: rgba($lLight-grey, 0.1);
+      padding: 14px 7px;
+      border-radius: 50%;
+      max-width: 30px;
+      margin-bottom: 22px;
+    }
+
+    .rate-component-title {
+      display: flex;
+      font-size: $font-size-22;
+      color: $bg-withe;
+      max-width: 100%;
+      letter-spacing: 1px;
+      margin: {
+        top: unset;
+        bottom: 30px;
+      };
+    }
+
+    .rate-component-desc {
+      display: flex;
+      color: $medium-grey;
+      margin: {
+        top: unset;
+        bottom: 30px;
+      };
+    }
+
+    .input-rate-main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 23px;
+
+      .input-rate {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          padding: unset;
+          margin: unset;
+
+          li {
+            list-style: none;
+          }
+
+          .rate {
+            display: flex;
+            background: rgba($lLight-grey, 0.1);
+            padding: 14px 20px;
+            border-radius: 50%;
+            border: none;
+            color: rgba($bg-withe, 0.2);
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+              transition: all 0.3s ease-in-out;
+              background: $orange;
+              color: $bg-withe;
+            }
+          }
+
+          .rate:focus {
+            background-color: $medium-grey;
+            color: $bg-withe;
+          }
+        }
+      }
+    }
+  }
+
+  .after-rate {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .thanks-icon-after {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+      padding-top: 5px;
+    }
+
+    .your-selected {
+      display: flex;
+      justify-content: center;
+      column-gap: 4px;
+      background: rgba($lLight-grey, 0.1);
+      padding: 10px;
+      border-radius: 25px;
+      max-width: 166px;
+      color: rgba($orange, 0.7);
+      margin-bottom: 30px;
+    }
+
+    .after-rate-title {
+      font-size: 25px;
+      color: $bg-withe;
+      margin: {
+        top: unset;
+        bottom: 23px;
+      };
+    }
+
+    .after-rate-decs {
+      text-align: center;
+      line-height: 25px;
+      color: rgba($bg-withe, 0.5);
+      margin: {
+        top: unset;
+        bottom: 10px;
+
+      };
+    }
+  }
+
+  .disFlex {
+    display: flex;
+  }
+
+  .disNone {
+    display: none;
+  }
+}
