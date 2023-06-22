@@ -1,3 +1,6 @@
+The view live 
+https://mohammad-abdallah2.github.io/FEM-ratin-component/
+
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
